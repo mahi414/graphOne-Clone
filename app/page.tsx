@@ -1,33 +1,21 @@
-import Header from "@/components/layout/Header";
-import Sidebar from "@/components/layout/Sidebar";
-
-import Hero from "@/components/home/Hero";
-import Collections from "@/components/home/Collections";
-import ProductSection from "@/components/home/ProductSection";
-import RightSidebar from "@/components/home/RightSidebar";
+import React from "react";
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
+import { Hero } from "@/components/home/Hero";
+import { TrendingSection } from "@/components/home/TrendingSection";
 
 export default function Home() {
   return (
-    <div className="flex-col min-h-screen bg-[#FCFCFD]">
-      <Sidebar />
+    <div className="flex flex-col min-h-screen bg-white text-slate-900 font-sans selection:bg-rose-100 selection:text-rose-900">
+      <Navbar />
 
-      <div className="ml-[240px] flex-1">
-        <Header />
+      {/* Main Content Area */}
+      <main className="flex-1">
+        <Hero />
+        <TrendingSection />
+      </main>
 
-        <main className="mx-auto max-w-[1500px] px-8 py-8">
-          <div className="grid grid-cols-12 gap-8">
-            <section className="col-span-8 space-y-8">
-              <Hero />
-              <Collections />
-              <ProductSection />
-            </section>
-
-            <aside className="col-span-4">
-              <RightSidebar />
-            </aside>
-          </div>
-        </main>
-      </div>
+      <Footer />
     </div>
   );
 }
