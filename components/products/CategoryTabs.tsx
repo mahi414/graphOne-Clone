@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-
+// import { ChevronDownIcon } from "@heroicons/react/24/solid";
 const TABS = [
   "All",
   "Chat",
@@ -19,35 +19,33 @@ export default function CategoryTabs() {
 
   return (
     <div className="px-3 sm:px-6 border-b border-gray-100 bg-white">
-      <div
-    className="flex items-center gap-2 overflow-x-auto whitespace-nowrap no-scrollbar py-1 sm:py-0">
-      {TABS.map((tab) => {
-        const isActive = active === tab;
+      <div className="flex items-center gap-2 overflow-x-auto whitespace-nowrap no-scrollbar py-1 sm:py-0">
+        {TABS.map((tab) => {
+          const isActive = active === tab;
 
-        return (
-          <button
-            key={tab}
-            onClick={() => setActive(tab)}
-            className={[
-              "flex items-center gap-1 shrink-0 transition-all border-b-2",
-              "px-3 sm:px-4 py-2 sm:py-3 text-xs sm:text-sm font-semibold",
-              "rounded-t-lg",
-              isActive
-                ? "border-rose-500 text-rose-500"
-                : "border-transparent text-gray-500 hover:text-gray-900",
-            ].join(" ")}
-          >
-            <span>{tab}</span>
+          return (
+            <button
+              key={tab}
+              onClick={() => setActive(tab)}
+              className={[
+                "flex items-center gap-1 shrink-0 transition-all border-b-2",
+                "px-3 sm:px-4 py-2 sm:py-3 text-xs sm:text-sm font-semibold",
+                "rounded-t-lg",
+                isActive
+                  ? "border-rose-500 text-rose-500"
+                  : "border-transparent text-gray-500 hover:text-gray-900",
+              ].join(" ")}
+            >
+              <span>{tab}</span>
 
-            {tab === "More" && (
-              <ChevronDownIcon className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
-            )}
-          </button>
-        );
-      })}
+              {tab === "More" && (
+                <ChevronDownIcon className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+              )}
+            </button>
+          );
+        })}
+      </div>
     </div>
-  </div>
-    
   );
 }
 
