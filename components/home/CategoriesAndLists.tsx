@@ -99,7 +99,7 @@ export function CategoriesAndLists() {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4">
           <button className="rounded-2xl border border-gray-200 bg-white p-5 flex items-center justify-between hover:border-rose-400 hover:shadow-md transition-all group text-left shadow-sm">
             <div className="flex items-center gap-3">
               <div className="p-2 rounded-xl bg-gray-50 border border-gray-100 group-hover:bg-rose-50 group-hover:border-rose-100 transition-colors shrink-0">
@@ -628,7 +628,7 @@ export function CategoriesAndLists() {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-5 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-4">
           <div className="rounded-2xl bg-gradient-to-br from-slate-900 to-indigo-950 border-indigo-900/50 border p-5 flex flex-col justify-between min-h-[120px] cursor-pointer hover:scale-[1.02] transition-transform shadow-md group">
             <h4 className="text-xs font-black text-white leading-tight group-hover:text-rose-400 transition-colors">
               OpenAI Alumni Startups
@@ -680,7 +680,7 @@ export function CategoriesAndLists() {
           subtitle="Recently added companies."
           href="/companies/new"
         />
-        <div className="grid grid-cols-2 sm:grid-cols-5 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-4">
           {NEW_COMPANIES.map((company) => (
             <div
               key={company.name}

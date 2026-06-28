@@ -311,7 +311,7 @@ export function ExploreGrid() {
         <div
           className={
             viewMode === "grid"
-              ? "grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5 mb-8"
+              ? "grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-5 mb-8"
               : "flex flex-col gap-4 mb-8"
           }
         >

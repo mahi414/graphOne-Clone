@@ -38,3 +38,12 @@ body{
 .section-title{
     @apply text-2xl font-bold tracking-tight;
 }
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
