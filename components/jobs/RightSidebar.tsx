@@ -4,7 +4,16 @@ import { FcGoogle } from "react-icons/fc";
 
 export default function RightSidebar() {
   return (
-    <aside className="hidden xl:block w-72 shrink-0 border-l border-gray-100 px-5 py-6 sticky top-14 h-[calc(100vh-3.5rem)] overflow-y-auto space-y-6">
+    <aside className="hidden lg:block
+  w-full lg:w-62 xl:w-70 max-h-screen
+  border-l border-gray-100
+  px-4 mx-auto py-2
+  bg-white
+  lg:sticky lg:top-14
+  lg:h-[calc(90vh-3.5rem)]
+  lg:overflow-y-auto
+  overscroll-contain
+  space-y-6 ">
       {/* Newsletter */}
       <div className="rounded-xl border border-gray-200 bg-white p-4 space-y-3">
         <div>

@@ -6,6 +6,11 @@ import { Footer } from "@/components/layout/Footer";
 import RightSidebar from "@/components/jobs/RightSidebar";
 import JobsHeader from "@/components/jobs/JobsHeader";
 import TrendingCompanies from "@/components/jobs/TrendingCompanies";
+import TrendingJobs from "@/components/jobs/TrendingJobs";
+import EngineeringJobs from "@/components/jobs/EngineeringJobs";
+import ProductJobs from "@/components/jobs/ProductsJob";
+import DesignJobsSection from "@/components/jobs/DesignJobsSection";
+import LoadMoreJobsButton from "@/components/jobs/LoadMoreJobsButton";
 
 
 const Page = () => {
@@ -33,15 +38,28 @@ const Page = () => {
           <div className=" mx-auto px-10 py-6">
             <JobsHeader/>
             <TrendingCompanies/>
+            <TrendingJobs/>
+            <EngineeringJobs/>
+            <ProductJobs/>
+            <DesignJobsSection/>
+            <LoadMoreJobsButton/>
 
 
-           
+    
           </div>
         </main>
 
         {/* RIGHT SIDEBAR */}
-        <aside className="hidden xl:flex w-72 shrink-0 border-l border-gray-100 bg-white sticky top-14 h-[calc(100vh-56px)] justify-center overflow-y-auto">
-          <div className="px-2 justify-between">
+        <aside className="hidden lg:flex
+  w-64
+  border-l border-gray-100
+  bg-white
+  sticky top-14
+  h-[calc(100vh-56px)]
+  overflow-hidden
+  justify-center
+  items-center ">
+          <div className="space-y-6 pb-10">
             <RightSidebar />
           </div>
         </aside>
